@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TralierCollectionView" customModule="GLI" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="e4Y-Kw-kgN" id="O7d-pR-7P6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nL6-VI-73x">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFO-R9-RkQ">
+                    <rect key="frame" x="10" y="10" width="3" height="20"/>
+                    <color key="backgroundColor" red="0.2474223475" green="0.53870009149999998" blue="0.83273633359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="13i-ZB-Vzb"/>
+                        <constraint firstAttribute="width" constant="3" id="nzv-4X-ye1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trailer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BL0-rv-ZU8">
+                    <rect key="frame" x="18" y="7.5" width="51" height="25"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                    <color key="textColor" red="0.35686274509999999" green="0.73333333329999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e4Y-Kw-kgN">
+                    <rect key="frame" x="10" y="42.5" width="300" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="tTr-oo-QzR"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4I3-Nh-UmW">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="e4Y-Kw-kgN" firstAttribute="leading" secondItem="JAq-ka-u4Y" secondAttribute="leading" constant="10" id="4yT-sE-Ag8"/>
+                <constraint firstItem="BL0-rv-ZU8" firstAttribute="centerY" secondItem="tFO-R9-RkQ" secondAttribute="centerY" id="Ftg-DB-MXs"/>
+                <constraint firstItem="JAq-ka-u4Y" firstAttribute="trailing" secondItem="e4Y-Kw-kgN" secondAttribute="trailing" constant="10" id="GHB-3d-MIh"/>
+                <constraint firstItem="e4Y-Kw-kgN" firstAttribute="top" secondItem="BL0-rv-ZU8" secondAttribute="bottom" constant="10" id="PLA-Ja-7A5"/>
+                <constraint firstItem="tFO-R9-RkQ" firstAttribute="top" secondItem="nL6-VI-73x" secondAttribute="top" constant="10" id="Vtl-ub-cFi"/>
+                <constraint firstItem="tFO-R9-RkQ" firstAttribute="leading" secondItem="JAq-ka-u4Y" secondAttribute="leading" constant="10" id="Ypp-gX-CCr"/>
+                <constraint firstItem="JAq-ka-u4Y" firstAttribute="bottom" secondItem="e4Y-Kw-kgN" secondAttribute="bottom" constant="10.5" id="oIF-Dk-BG6"/>
+                <constraint firstItem="BL0-rv-ZU8" firstAttribute="leading" secondItem="tFO-R9-RkQ" secondAttribute="trailing" constant="5" id="w7r-gd-kLj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="JAq-ka-u4Y"/>
+            <point key="canvasLocation" x="69.565217391304358" y="-99.441964285714278"/>
+        </view>
+    </objects>
+</document>

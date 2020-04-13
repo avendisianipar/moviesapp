@@ -1,0 +1,6 @@
+framework module Pods_GLI {
+  umbrella header "Pods-GLI-umbrella.h"
+
+  export *
+  module * { export * }
+}
